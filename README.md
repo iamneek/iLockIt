@@ -18,7 +18,7 @@ iLockIt intercepts navigation to locked sites and redirects to a lock screen. Af
 3. Click "Load Temporary Add-on".
 4. Choose `manifest.json` from this folder.
 
-## AMO Listing
+## Find iLockIt in Mozilla Addons
 https://addons.mozilla.org/en-US/firefox/addon/ilockit/
 
 ## Usage
@@ -28,9 +28,16 @@ https://addons.mozilla.org/en-US/firefox/addon/ilockit/
 
 ## For Accessing Options
 1. Go to extensions page.
-2. Click on the vertical three dots icon beside the title of iLockIt extension.
+<img width="1366" height="681" alt="image" src="https://github.com/user-attachments/assets/c0b7fff6-5d86-48a0-b174-cf3357edecef" />
+
+2. Click on the three dots '...' icon beside the title of iLockIt extension.
+<img width="701" height="113" alt="image" src="https://github.com/user-attachments/assets/03b20ca1-857c-4c6f-a290-3c5cbf8eb8f4" />
+
 3. Click on 'options'.
+<img width="812" height="224" alt="image" src="https://github.com/user-attachments/assets/3a5983b9-507b-44fc-8997-26e8640be661" />
+
 4. Tadaaa!
+<img width="1350" height="768" alt="image" src="https://github.com/user-attachments/assets/5257222f-3281-4d83-af55-215aa7cf7025" />
 
 ## Permissions
 - `webRequest` and `webRequestBlocking` to redirect locked sites to the lock screen.
