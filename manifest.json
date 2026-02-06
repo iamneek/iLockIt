@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "iLockIt",
+  "version": "1.0.0",
+  "description": "Lock specified sites behind a password.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ],
+  "icons": {
+    "48": "icons/lock.svg",
+    "96": "icons/lock.svg"
+  },
+  "browser_action": {
+    "default_title": "iLockIt",
+    "default_icon": "icons/lock.svg"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["lock.html", "lock.css", "lock.js"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "site-locker@example.com",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "collects_data": false,
+        "data_types": [],
+        "purposes": []
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  }
+}

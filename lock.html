@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Locked</title>
+    <link rel="stylesheet" href="lock.css" />
+  </head>
+  <body>
+    <div class="veil"></div>
+    <main class="card">
+      <div class="badge">Locked</div>
+      <h1>This site is protected.</h1>
+      <p id="site-label" class="site-label"></p>
+
+      <label class="field">
+        Password
+        <input id="password" type="password" autocomplete="current-password" autofocus />
+      </label>
+
+      <label class="field">
+        Suspend password for
+        <select id="duration">
+          <option value="0">Immediately</option>
+          <option value="2">2 min</option>
+          <option value="5">5 min</option>
+          <option value="10">10 min</option>
+          <option value="30">30 min</option>
+          <option value="custom">Let me specify</option>
+        </select>
+      </label>
+
+      <div id="custom-wrap" class="field hidden">
+        <label>
+          Custom minutes
+          <input id="custom-minutes" type="number" min="1" max="240" placeholder="15" />
+        </label>
+      </div>
+      <div class="actions">
+        <button id="unlock" class="primary" type="button">Unlock</button>
+      </div>
+      <p id="message" class="message"></p>
+    </main>
+    <script src="lock.js"></script>
+  </body>
+</html>

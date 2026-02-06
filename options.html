@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iLockIt Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+    <main class="wrap">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">iLockIt</p>
+          <h1>Guard the sites that steal your focus.</h1>
+          <p class="subhead">
+            Add domains you want locked, then set a password to unlock access on demand.
+          </p>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Locked Sites</h2>
+          <p>Enter a domain like <span class="mono">example.com</span> or a wildcard like <span class="mono">*.news.com</span>.</p>
+        </div>
+        <div class="site-entry">
+          <input id="site-input" type="text" placeholder="twitter.com" />
+          <button id="add-site" type="button">Add Site</button>
+        </div>
+        <ul id="site-list" class="site-list"></ul>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Password</h2>
+          <p>Set or update the password required to unlock blocked sites.</p>
+        </div>
+        <div class="password-grid">
+          <label id="current-wrap" class="hidden">
+            Current password
+            <input id="current-password" type="password" autocomplete="current-password" />
+          </label>
+          <label>
+            New password
+            <input id="password" type="password" autocomplete="new-password" />
+          </label>
+          <label>
+            Confirm password
+            <input id="confirm" type="password" autocomplete="new-password" />
+          </label>
+        </div>
+        <div class="actions">
+          <button id="save" type="button" class="primary">Save Settings</button>
+          <span id="status" class="status"></span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Masking</h2>
+          <p>Choose how the extension appears in your toolbar.</p>
+        </div>
+        <div class="mask-grid">
+          <label class="toggle">
+            <input id="mask-enabled" type="checkbox" />
+            <span>Enable masking</span>
+          </label>
+          <label></label>
+            Toolbar name
+            <input id="mask-title" type="text" placeholder="Reading Helper" />
+          </label>
+          <label>
+            Toolbar icon
+            <select id="mask-icon">
+              <option value="lock">Lock</option>
+              <option value="orbit">Orbit</option>
+              <option value="leaf">Leaf</option>
+              <option value="paper">Paper</option>
+            </select>
+          </label>
+        </div>
+      </section>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Outfit", system-ui, sans-serif;
+  --text: #e7e9f2;
+  --text-muted: #c7cad9;
+  --surface: rgba(22, 25, 36, 0.9);
+  --accent: #9aa7c7;
+  --accent-warm: #a07b5d;
+  --bg: radial-gradient(circle at top, #0b0d14 0%, #131725 40%, #1b1d2f 70%, #10121c 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.veil {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(16, 18, 28, 0.7), rgba(70, 84, 120, 0.35), rgba(120, 85, 60, 0.3));
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 460px);
+  background: var(--surface);
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(5, 7, 12, 0.7);
+  display: grid;
+  gap: 16px;
+  text-align: left;
+  animation: rise 0.6s ease-out;
+}
+
+.badge {
+  justify-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #3a445f;
+  color: #eef1f8;
+  font-family: var(--font);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.site-label {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+
+input,
+select {
+  border-radius: 12px;
+  border: 1px solid rgba(120, 130, 155, 0.35);
+  padding: 12px 14px;
+  font-size: 1rem;
+  background: rgba(24, 28, 40, 0.85);
+  font-family: var(--font);
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-family: var(--font);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background: #3a445f;
+  color: #eef1f8;
+  box-shadow: 0 10px 24px rgba(6, 8, 14, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(7, 10, 16, 0.6);
+}
+
+.primary {
+  background: #9aa7c7;
+  color: #141824;
+  box-shadow: 0 12px 30px rgba(5, 7, 12, 0.7);
+}
+
+.message {
+  margin: 0;
+  min-height: 1.2em;
+  color: #8b2e2e;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
