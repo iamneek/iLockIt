@@ -1,6 +1,6 @@
 # iLockIt
 
-iLockIt is a Firefox extension that locks specific websites behind a password. Choose a suspension duration to temporarily allow access without re-entering the password.
+iLockIt is a Firefox (currently supports firefox only) extension that locks specific websites behind a password. Choose a suspension duration to temporarily allow access without re-entering the password.
 
 ## Features
 - Lock any domain or wildcard subdomains (for example, `example.com` or `*.news.com`)
