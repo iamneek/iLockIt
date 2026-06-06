@@ -1,7 +1,7 @@
 # iLockIt
-<div align="center">
-  <img src="https://socialify.git.ci/iamneek/iLockIt/image?font=Bitter&language=1&name=1&pattern=Signal&stargazers=1&theme=Light" alt="iLockIt" width="640" height="320" />
-</div>
+<p>
+  <img src="https://socialify.git.ci/iamneek/iLockIt/image?font=Bitter&language=1&name=1&pattern=Signal&theme=Light" alt="iLockIt"/>
+</p>
 iLockIt is a Firefox (currently supports firefox only) extension that locks specific websites behind a password. Choose a suspension duration to temporarily allow access without re-entering the password.
 
 ## Features
